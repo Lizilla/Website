@@ -1,0 +1,71 @@
+<?page title="Inicio" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:n="native">
+<style src="/css/estilo.css" />
+<window style="background-color:#E6E6E6;" contentStyle="background-color:#E6E6E6;">
+
+<hbox style="background-color:#028F1E;" width="100%">
+	<image src="/image/logo_coop.png" height="180px" width="200px" style="margin-left:10%"/>
+	<space/>
+	<space/>
+	<image src="/image/logo_title.png" height="150px" width="800px"/>
+	<space/>
+	<space/>
+   <vbox vflex="true" style="margin-top:10%">
+	<button iconSclass="z-icon-phone">(0515)212754</button>
+	<space/>
+	<button iconSclass="z-icon-envelope" style="background-color:Green">coop_docentes_pby@outlook.es</button>
+	</vbox>
+</hbox>
+
+<vbox vflex="100%" style="background-color:black; ">
+
+	<hlayout hflex="100%" >
+ 	<menubar id="menubar" autodrop="true" width="100%">
+          <menuitem  label="INICIO" href="Inicio.zul" />
+          
+        <menu  label="SERVICIOS FINANCIEROS">
+            <menupopup>
+                <menuitem label="Misión y Visión" href="MisionVision.zul"/>
+                <menuitem label="Principio y Valores"/>
+                <menuitem label="Directivos"/>
+                <menuitem label="Organigrama"/>
+                <menuitem label="Memoria y Balance"/>
+                <menuitem label="Reglamentos"/>
+                </menupopup>
+                </menu>
+
+         <menu label="SERVICIOS FINANCIEROS">
+         	<menupopup>
+         		<menuitem label="Créditos"/>
+         		<menuitem label="Ahorros"/>    	
+         	</menupopup>
+         </menu>
+         <menu label="SERVICIOS SOCIALES">
+         	<menupopup>
+         		<menuitem label="Solidaridad"/>
+         		<menuitem label="Educación"/>
+         	</menupopup>
+         </menu>
+         <menuitem label="CONTÁCTENOS"/>
+        
+                </menubar>
+        </hlayout>
+                
+<hbox style="aling:center">
+<label value="Usuario"/>
+<textbox id="tx_user" class="form-control" placeholder="Usuario.." 
+				width="100%"
+				constraint="no empty"/>
+			<div height="5px"></div>
+			<label value="Contraseña"/>
+			<textbox id="tx_pass" class="form-control" placeholder="Password.."
+				type="password"
+				constraint="no empty"></textbox>
+			<div height="5px"></div>
+			<button sclass="btn-success" hflex="true">Ingresar</button>
+
+</hbox>
+
+	</vbox>	
+</window>
+</zk>
